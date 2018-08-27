@@ -63,7 +63,7 @@
         //每一行有几个item
         NSMutableArray *itemArray = [[NSMutableArray alloc] init];
         [self.itemRectArray addObject:itemArray];
-        NSInteger col = (self.collectionView.frame.size.width - (left + right)) / (cellW + self.cellSpace);
+        NSInteger col = (self.collectionView.frame.size.width - (left + right) + self.cellSpace) / (cellW + self.cellSpace);
         NSInteger row = item % col == 0 ? item / col : item / col + 1;
         for (int j = 0; j < item; j++) {
             CGRect itemRect = CGRectMake(left + j % col * (cellW + self.cellSpace), contentH + top + j / col * (self.itemSize.height + self.cellSpace), cellW, cellH);
@@ -119,7 +119,7 @@
         contentW += self.footerReferenceSize.width;
         [self.attributesArray addObject:[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter atIndexPath:[NSIndexPath indexPathWithIndex:i]]];
     }
-    self.contentSize = CGSizeMake(0, self.collectionView.frame.size.height);
+    self.contentSize = CGSizeMake(contentW, self.collectionView.frame.size.height);
 }
 
 - (CGSize)collectionViewContentSize {

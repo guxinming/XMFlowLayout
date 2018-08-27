@@ -16,6 +16,11 @@
 		001B9AB72133FD55009D4A41 /* XMFlowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9AB62133FD55009D4A41 /* XMFlowLayoutTests.m */; };
 		001B9AC22133FD55009D4A41 /* XMFlowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9AC12133FD55009D4A41 /* XMFlowLayoutUITests.m */; };
 		001B9AD12133FDB2009D4A41 /* XMFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9AD02133FDB2009D4A41 /* XMFlowLayout.m */; };
+		001B9AD921340D03009D4A41 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B9AD321340D02009D4A41 /* CollectionReusableView.xib */; };
+		001B9ADA21340D03009D4A41 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9AD621340D03009D4A41 /* CustomCollectionViewCell.m */; };
+		001B9ADB21340D03009D4A41 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B9AD721340D03009D4A41 /* CustomCollectionViewCell.xib */; };
+		001B9ADC21340D03009D4A41 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9AD821340D03009D4A41 /* CollectionReusableView.m */; };
+		001B9ADF21340D1C009D4A41 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B9ADE21340D1C009D4A41 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,14 @@
 		001B9AC32133FD55009D4A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001B9ACF2133FDB2009D4A41 /* XMFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMFlowLayout.h; sourceTree = "<group>"; };
 		001B9AD02133FDB2009D4A41 /* XMFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMFlowLayout.m; sourceTree = "<group>"; };
+		001B9AD321340D02009D4A41 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		001B9AD421340D02009D4A41 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		001B9AD521340D03009D4A41 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		001B9AD621340D03009D4A41 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		001B9AD721340D03009D4A41 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		001B9AD821340D03009D4A41 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		001B9ADD21340D1C009D4A41 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		001B9ADE21340D1C009D4A41 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +117,12 @@
 		001B9A9C2133FD54009D4A41 /* XMFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				001B9AD421340D02009D4A41 /* CollectionReusableView.h */,
+				001B9AD821340D03009D4A41 /* CollectionReusableView.m */,
+				001B9AD321340D02009D4A41 /* CollectionReusableView.xib */,
+				001B9AD521340D03009D4A41 /* CustomCollectionViewCell.h */,
+				001B9AD621340D03009D4A41 /* CustomCollectionViewCell.m */,
+				001B9AD721340D03009D4A41 /* CustomCollectionViewCell.xib */,
 				001B9A9D2133FD54009D4A41 /* AppDelegate.h */,
 				001B9A9E2133FD54009D4A41 /* AppDelegate.m */,
 				001B9AA02133FD54009D4A41 /* ViewController.h */,
@@ -114,6 +133,8 @@
 				001B9AAB2133FD55009D4A41 /* Info.plist */,
 				001B9AAC2133FD55009D4A41 /* main.m */,
 				001B9AD22133FDB8009D4A41 /* XMFlowLayout */,
+				001B9ADD21340D1C009D4A41 /* CollectionViewController.h */,
+				001B9ADE21340D1C009D4A41 /* CollectionViewController.m */,
 			);
 			path = XMFlowLayout;
 			sourceTree = "<group>";
@@ -249,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				001B9AAA2133FD55009D4A41 /* LaunchScreen.storyboard in Resources */,
+				001B9AD921340D03009D4A41 /* CollectionReusableView.xib in Resources */,
 				001B9AA72133FD55009D4A41 /* Assets.xcassets in Resources */,
+				001B9ADB21340D03009D4A41 /* CustomCollectionViewCell.xib in Resources */,
 				001B9AA52133FD54009D4A41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,9 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				001B9AD12133FDB2009D4A41 /* XMFlowLayout.m in Sources */,
+				001B9ADF21340D1C009D4A41 /* CollectionViewController.m in Sources */,
 				001B9AA22133FD54009D4A41 /* ViewController.m in Sources */,
 				001B9AAD2133FD55009D4A41 /* main.m in Sources */,
 				001B9A9F2133FD54009D4A41 /* AppDelegate.m in Sources */,
+				001B9ADA21340D03009D4A41 /* CustomCollectionViewCell.m in Sources */,
+				001B9ADC21340D03009D4A41 /* CollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
