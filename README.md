@@ -76,19 +76,6 @@ UICollection的自定义布局
         layout.itemSize = CGSizeMake(100, 100);
         layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
         layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
-        layout.cellInset = UIEdgeInsetsMake(10, 10, 10, 10);
-        layout.cellSpace = 10;
-```
-效果如下
-
-![image](http://upload-images.jianshu.io/upload_images/8553605-a5c358edbb77e31c.gif?imageMogr2/auto-orient/strip)
-
-看起来任然不够理想稍微调整一下调用方式
-```
-        XMFlowLayout *layout = [[XMFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(100, 100);
-        layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
-        layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
         layout.cellInset = UIEdgeInsetsMake(10, (self.view.frame.size.width - 320) / 2, 10, (self.view.frame.size.width - 320) / 2);
         layout.cellSpace = 10;
 ```
