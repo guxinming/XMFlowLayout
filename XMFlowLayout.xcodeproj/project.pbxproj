@@ -117,12 +117,6 @@
 		001B9A9C2133FD54009D4A41 /* XMFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				001B9AD421340D02009D4A41 /* CollectionReusableView.h */,
-				001B9AD821340D03009D4A41 /* CollectionReusableView.m */,
-				001B9AD321340D02009D4A41 /* CollectionReusableView.xib */,
-				001B9AD521340D03009D4A41 /* CustomCollectionViewCell.h */,
-				001B9AD621340D03009D4A41 /* CustomCollectionViewCell.m */,
-				001B9AD721340D03009D4A41 /* CustomCollectionViewCell.xib */,
 				001B9A9D2133FD54009D4A41 /* AppDelegate.h */,
 				001B9A9E2133FD54009D4A41 /* AppDelegate.m */,
 				001B9AA02133FD54009D4A41 /* ViewController.h */,
@@ -132,9 +126,8 @@
 				001B9AA82133FD55009D4A41 /* LaunchScreen.storyboard */,
 				001B9AAB2133FD55009D4A41 /* Info.plist */,
 				001B9AAC2133FD55009D4A41 /* main.m */,
+				001B9AE021341994009D4A41 /* CollectionView */,
 				001B9AD22133FDB8009D4A41 /* XMFlowLayout */,
-				001B9ADD21340D1C009D4A41 /* CollectionViewController.h */,
-				001B9ADE21340D1C009D4A41 /* CollectionViewController.m */,
 			);
 			path = XMFlowLayout;
 			sourceTree = "<group>";
@@ -164,6 +157,21 @@
 				001B9AD02133FDB2009D4A41 /* XMFlowLayout.m */,
 			);
 			path = XMFlowLayout;
+			sourceTree = "<group>";
+		};
+		001B9AE021341994009D4A41 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				001B9AD421340D02009D4A41 /* CollectionReusableView.h */,
+				001B9AD821340D03009D4A41 /* CollectionReusableView.m */,
+				001B9AD321340D02009D4A41 /* CollectionReusableView.xib */,
+				001B9AD521340D03009D4A41 /* CustomCollectionViewCell.h */,
+				001B9AD621340D03009D4A41 /* CustomCollectionViewCell.m */,
+				001B9AD721340D03009D4A41 /* CustomCollectionViewCell.xib */,
+				001B9ADD21340D1C009D4A41 /* CollectionViewController.h */,
+				001B9ADE21340D1C009D4A41 /* CollectionViewController.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
