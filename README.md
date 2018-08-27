@@ -1,4 +1,7 @@
 # XMFlowLayout
+
+pod 'XMFlowLayout'
+
 UICollection的自定义布局
 
 看了一下网上有关UICollectionViewLayout的文章，大部分都是对于一些方法的解释，或者是瀑布流等等一些自定义效果，效果非常好。对于多个分组呢？有headerView和footerView呢？很难找到相关文章，所以就想分享一下如何去处理多个分组且有headerView和footerView的自定义布局。
