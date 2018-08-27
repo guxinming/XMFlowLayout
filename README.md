@@ -10,7 +10,9 @@ UICollection的自定义布局
         layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
 ```
 效果如下
+
 ![image](http://upload-images.jianshu.io/upload_images/8553605-966fb58ae18cead1.gif?imageMogr2/auto-orient/strip)
+
 可以看到这样的效果是不满足需求的，那我们就开始去自定义它，创建一个layout继承自UICollectionViewFlowLayout，核心代码如下
 ```
 @interface XMFlowLayout : UICollectionViewFlowLayout
@@ -78,7 +80,9 @@ UICollection的自定义布局
         layout.cellSpace = 10;
 ```
 效果如下
+
 ![image](http://upload-images.jianshu.io/upload_images/8553605-a5c358edbb77e31c.gif?imageMogr2/auto-orient/strip)
+
 看起来任然不够理想稍微调整一下调用方式
 ```
         XMFlowLayout *layout = [[XMFlowLayout alloc] init];
@@ -89,4 +93,5 @@ UICollection的自定义布局
         layout.cellSpace = 10;
 ```
 ![image](http://upload-images.jianshu.io/upload_images/8553605-db15b10d02062708.gif?imageMogr2/auto-orient/strip)
-你可以通过itemsize和cellInset和cellSpace精准的控制你想要的效果，这里只是处理了垂直方向的定制，水平方向的也是一样的道理，我写了一个demo，对水平方向也做了处理，有兴趣的朋友可以去看一下[XMFlowLayout](https://github.com/guxinming/XMFlowLayout)
+
+你可以通过itemsize和cellInset和cellSpace精准的控制你想要的效果，这里只是处理了垂直方向的定制，水平方向的也是一样的道理
