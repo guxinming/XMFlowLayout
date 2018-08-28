@@ -10,7 +10,7 @@
 #import "CustomCollectionViewCell.h"
 #import "CollectionReusableView.h"
 
-@interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) UICollectionView *collectionView;
 
@@ -71,5 +71,23 @@
         return reuseView;
     }
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeMake(self.view.frame.size.width, 100);
+}
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.row % 5 == 0) {
+//        return CGSizeMake(500, 300);
+//    } else if (indexPath.row % 5 == 1) {
+//        return CGSizeMake(400, 200);
+//    } else if (indexPath.row % 5 == 2) {
+//        return CGSizeMake(300, 100);
+//    } else if (indexPath.row % 5 == 3) {
+//        return CGSizeMake(200, 50);
+//    } else {
+//        return CGSizeMake(100, 100);
+//    }
+//}
 
 @end

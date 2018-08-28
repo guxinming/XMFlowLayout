@@ -56,6 +56,7 @@
         layout.itemSize = CGSizeMake(100, 100);
         layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
         layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
+        layout.sectionInset = UIEdgeInsetsMake(10, (self.view.frame.size.width - 320) / 2, 10, (self.view.frame.size.width - 320) / 2);
         
         vc.layout = layout;
     } else if (indexPath.row == 1) {
@@ -63,7 +64,7 @@
         layout.itemSize = CGSizeMake(100, 100);
         layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
         layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
-        layout.cellInset = UIEdgeInsetsMake(10, (self.view.frame.size.width - 320) / 2, 10, (self.view.frame.size.width - 320) / 2);
+        layout.sectionInset = UIEdgeInsetsMake(10, (self.view.frame.size.width - 320) / 2, 10, (self.view.frame.size.width - 320) / 2);
         layout.cellSpace = 10;
         
         vc.layout = layout;
@@ -72,7 +73,7 @@
         layout.itemSize = CGSizeMake(100, 100);
         layout.headerReferenceSize = CGSizeMake(100, 400);
         layout.footerReferenceSize = CGSizeMake(100, 400);
-        layout.cellInset = UIEdgeInsetsMake(40, 10, 40, 10);
+        layout.sectionInset = UIEdgeInsetsMake(40, 10, 40, 10);
         layout.cellSpace = 10;
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         

@@ -11,12 +11,8 @@
 @interface XMFlowLayout : UICollectionViewFlowLayout
 
 /**
- cell与Collection的上下左右的边距
- */
-@property (nonatomic) UIEdgeInsets cellInset;
-/**
  cell之间的距离
  */
-@property (nonatomic) CGFloat      cellSpace;
+@property (nonatomic) CGFloat cellSpace;
 
 @end
